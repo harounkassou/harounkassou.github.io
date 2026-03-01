@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oxygen Std. – Google Play Developer</title>
+
+  <style>
+    :root {
+      --primary: #1a73e8;
+      --bg: #f5f7fb;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --card: #ffffff;
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    /* Centered Header */
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .dev-icon {
+      width: 110px;
+      height: 110px;
+      margin: 0 auto 18px;
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+      background: #fff;
+    }
+
+    .dev-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 34px;
+    }
+
+    .promo {
+      margin-top: 12px;
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Description */
+    .description {
+      background: var(--card);
+      padding: 36px;
+      border-radius: var(--radius);
+      line-height: 1.8;
+      margin-bottom: 50px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .description p {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #374151;
+    }
+
+    /* Games */
+    .games-title {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 26px;
+    }
+
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .game-card {
+      display: block;
+      text-decoration: none;
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      color: inherit;
+    }
+
+    .game-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 35px rgba(0,0,0,0.08);
+    }
+
+    .game-icon {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 14px;
+      background: #e5e7eb;
+      margin-bottom: 12px;
+    }
+
+    .game-icon-img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 14px;
+      object-fit: cover;
+      margin-bottom: 12px;
+      background: #e5e7eb;
+    }
+
+    .game-card h3 {
+      margin: 10px 0 4px;
+      font-size: 18px;
+    }
+
+    .game-card span {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="dev-icon">
+        <img src="https://lh3.googleusercontent.com/V6bWFW02cx4Qs1n_u29TBWEIEWfO9Rgy7HHbT43YdndtL8vEmypqrLk727g4o6J0KA" alt="Developer Icon">
+      </div>
+      <h1>Oxygen Std</h1>
+      <div class="promo">
+        Fun, creative, and addictive mobile games crafted with passion for players around the world.
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div class="description">
+      <p>
+        We are an independent mobile game developer focused on creating immersive,
+        accessible, and high-quality gaming experiences for players around the world.
+        Our work is driven by a passion for simplicity, fun, and thoughtful design,
+        ensuring that every game we publish feels intuitive while remaining engaging
+        over time. We believe that great mobile games should be easy to pick up,
+        enjoyable across short or long play sessions, and optimized to run smoothly
+        on a wide range of Android devices without compromising visual quality or
+        performance.
+      </p>
+    
+      <p>
+        Each game is carefully designed from concept to release, with attention given
+        to gameplay mechanics, user experience, visual identity, and overall polish.
+        We focus on balanced progression systems, responsive controls, and clean
+        interfaces that make gameplay feel natural and rewarding. Our development
+        process emphasizes testing, iteration, and continuous refinement, allowing
+        us to deliver games that are stable, enjoyable, and aligned with player
+        expectations across different age groups and skill levels.
+      </p>
+    
+      <p>
+        Player satisfaction is at the core of everything we do. We actively listen
+        to feedback, monitor performance, and release updates that improve gameplay,
+        fix issues, and introduce meaningful enhancements. Our long-term mission is
+        to build a trusted developer presence on Google Play by publishing games that
+        players can confidently download, recommend, and return to regularly. By
+        combining creativity, consistency, and respect for our audience, we aim to
+        create lasting entertainment experiences that stand out in the mobile gaming
+        ecosystem.
+      </p>
+    </div>
+
+    <!-- Games -->
+    <h2 class="games-title">Published Games</h2>
+    <div class="games-grid">
+
+      <a class="game-card" href="https://play.google.com/store/apps/details?id=com.stretching.neck.simulator" target="_blank">
+        <img
+          class="game-icon-img"
+          src="https://lh3.googleusercontent.com/tdMF7kNCvlyAxeYHcUNtL9McK2pQoMFcT5QYhlWotckmckIICgQa7Ys_-nfMQu41sbk31EpLumIqG6j_u-6sBzY"
+          alt="Game Name Icon"
+        >
+        <h3>Stretching Neck Simulator</h3>
+        <span>Arcade • Casual</span>
+      </a>
+
+      <a class="game-card" href="https://play.google.com/store/apps/details?id=com.wait.dont.touch" target="_blank">
+        <img
+          class="game-icon-img"
+          src="https://lh3.googleusercontent.com/nQyrPg_b5fyGNp_LfL7AUv6RpuYxwTK0qBLlR8V6n5jKTjkap3KWZxlh9kNstX-O0OUlAXVvbJbL9bk340WltAv"
+          alt="Game Name Icon"
+        >
+        <h3>Wait… Don’t Touch!</h3>
+        <span>Puzzle • Brain</span>
+      </a>
+
+      <a class="game-card" href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME_3" target="_blank">
+        <img
+          class="game-icon-img"
+          src="https://lh3.googleusercontent.com/APP_ICON_URL"
+          alt="Game Name Icon"
+        >
+        <h3>Game Title Three</h3>
+        <span>Kids • Educational</span>
+      </a>
+
+      <a class="game-card" href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME_4" target="_blank">
+        <img
+          class="game-icon-img"
+          src="https://lh3.googleusercontent.com/APP_ICON_URL"
+          alt="Game Name Icon"
+        >
+        <h3>Game Title Four</h3>
+        <span>Action • Arcade</span>
+      </a>
+
+    </div>
+
+    <footer>
+      © 2026 Your Developer Name • Google Play Developer
+    </footer>
+
+  </div>
+</body>
+</html>
